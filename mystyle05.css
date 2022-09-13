@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*mystlye05.css*/
+/*참조 05_다양한selector.html*/
+/*https://www.w3schools.com/cssref/css_selectors.asp*/
+
+/*p {
+    font-family: 궁서체;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}*/
+
+div p {/* <div> 안에 있는 모든 <p>요소 */
+    background-color: red;
+}
+
+h2, p { /*모든 h2, 모든 p*/
+    color: khaki;
+}
+
+div h2 { /*h2에 그림자넣기*/
+    text-shadow: 2px 2px gray;
+}
+
+/* 참조 : https://www.w3schools.com/css/css_boxmodel.asp */
+#mybox{ /*Box Model*/
+    width: 320px;
+    padding: 10px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+/*부모>자식*/
+div>span>p {
+    text-decoration:line-through;
+}
+
+/*해바라기 접근*/
+div>span>h2 {
+    color: dodgerblue;
+}
+
+#menu{
+    width: 100px;
+    height: 100px;
+    background: gray;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+#nav{
+    width: 300px;
+    height: 500px;
+    background: beige;
+    margin: auto;
+}
+
+#nav>ul{ /* id=nav의 자식 중에서 ul 태그*/
+    list-style: none;
+}
+
+#nav .news{ /* id="nav" 안에서 모든 class="news"에 적용하라 */
+    background: olive;
+    font-weight: bold;
+}
+
+/*태그의 상쇄 속성 접근*/
+#nav>ol>li:nth-child(2){
+    font-weight: bold;
+}
+
+#nav>ol>li>a{
+    width: 200px;
+    height: 100px;
+    background-color: hotpink;
+    text-decoration-style: wavy;
+}
+
+/*
+    참조 https://www.w3schools.com/cssref/sel_active.asp
+    a:link      - 일반적 링크 및 방문하지 않은 링크
+    a:visited   - 방문했던 링크
+    a:hover     - 마우스를 올렸을 때 링크
+    a:active    - 마우스를 누르는 순간의 링크
+*/
+a:link      {color: black; text-decoration: none;}
+a:visited   {color: crimson; text-decoration: none;}
+a:hover     {color: black; text-decoration: underline;}
+a:active    {color: black; text-decoration: none;}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>  
+<html lang="ko">
+    <head>
+        <title>09_absolute.html</title>
+        <!-- 현재 페이지에서 CSS 초기화 -->
+        <link rel="stylesheet" href="reset.css">
+        <style>
+            /* #s1 ul{background-color: yellow; height: 300px;} */
+            /* #s1 li:nth-child(1){background-color: red; position: absolute; left: 100px; top 30px;} */
+            /* #s1 li:nth-child(1){background-color: red; position: absolute; right: 0; bottom: 0;} */
+
+            /* 1) body 본문 영역이 기준인 좌표 */
+            /* #s1 li:nth-child(1) {background-color: red; position: absolute; left: 15px; top: 15px;}
+            #s1 li:nth-child(2) {background-color: green;}
+            #s1 li:nth-child(3) {background-color: blue;} */
+
+            /* 2) 부모 영역을 기준으로 할 때 position:relative */
+            /* 부모 ul, 자식 li */
+            /* #s1 ul {background-color: yellow; height: 300px; position: relative;}
+            #s1 li:nth-child(1) {background-color: red;
+                                 position: absolute;
+                                 --left: 0; 
+                                 --top: 0;
+                                 right: 0;
+                                 bottom: 0;
+                                }
+            #s1 li:nth-child(2) {background-color: green;}
+            #s1 li:nth-child(3) {background-color: blue;} */
+
+            /* 3) */
+            #s1 ul {background: yellow; height: 300px; width: 300px; position: relative;}
+            #s1 li:nth-child(1) {background-color: red; position: absolute; right: 0; bottom: 0; width: 100%;}
+            #s1 li:nth-child(2) {background-color: green;}
+            #s1 li:nth-child(3) {background-color: blue;}
+
+        </style>
+    </head>
+    <body>        
+
+        <!-- 절대적 위치 position:absolute -->
+        <section id="s1">
+            <h3>position:absolute</h3>
+            <ul>
+                <li>국어</li>
+                <li>영어</li>
+                <li>수학</li>
+            </ul>
+        </section>
+
+    </body>
+</html>

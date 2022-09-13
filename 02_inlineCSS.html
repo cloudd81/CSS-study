@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="ko">
+    <head>
+        <title>02_inlineCSS.html</title>
+    </head>
+    <body>   
+        <h3>1) Inline CSS</h3>     
+        <!-- style="" 속성:값; -->
+
+        <div style="width: 200px; height: 150px; background-color: red;"></div>
+        <div style="width: 100px; /* 가로 크기 */
+                    height: 100px; /* 세로 크기 */
+                    --background-color: blue;"></div>
+        <hr>
+        <div style="width: 100%; height: 100px; background-color: green;"></div>
+        <hr>
+        <div style="width: 50%; height: 100px; background-color: blueviolet;"></div>
+        <hr>
+
+        <!-- 참조 https://www.w3schools.com/css/css_background.asp -->
+        <!-- background 배경 관련 스타일 -->
+        <div style="width: 300px;
+                    height: 300px;
+                    background-image: url(../images/coffee.png);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 20% 20%; /* 가로 세로 */"></div> 
+        <hr>
+
+        <!-- 참조 : https://www.w3schools.com/css/css_text.asp -->
+        <!-- 텍스트 관련 스타일 -->
+        <div style="width: 300px;
+                    height: 300px;
+                    background-color: yellow;
+                    color: blue;                /*글자색*/
+                    text-decoration:underline;    /*밑줄*/
+                    text-indent: 50px;            /*들여쓰기*/
+                    --text-shadow: 3px 2px black; /*그림자 수평(3) 수직(2) 파랑*/
+                    letter-spacing: -3px;           /*글자간격*/
+                    line-height: 20px;              /*즐긴갹*/
+                    word-spacing: 10px;            /*단어간격*/">
+            정재훈 가천대 의대 예방의학과 교수는 전날 질병관리청이 주최한
+            코로나19 전문가 초청 설명회에서 "전문가들이 2,3주 전에 예측했던 것은 최악의
+            시나리오에 가까웠는데, 지금은 정보의 확실성이 생기고 있기 때문에 유행 규모가
+            예측보다 조금 감소할 수 있다고 생각한다"고 말했다.
+        </div>
+    </body>
+</html>

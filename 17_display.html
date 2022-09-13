@@ -1,0 +1,89 @@
+<!DOCTYPE html>  
+<html lang="ko">
+    <head>
+        <title>17_display.html</title>
+        <style>
+            #mydiv{
+                background-color: yellow;
+                position: absolute;
+                left: 30px;
+                top: 30px;
+                width: 200px;
+                height: 150px;
+                overflow: scroll;
+                --display: block; /* none | block */
+                visibility: visible;
+            }
+
+            p {color: red;}
+            p.ex1 {display: none;}
+            p.ex2 {display: inline;}
+            p.ex3 {display: block;}
+            p.ex4 {display: inline-block;}
+
+        </style>
+    </head>
+    <body>       <!-- 기본적으로 style="position:relative" 가 있는 상태이다. --> 
+
+        <!-- 참조 https://www.w3schools.com/css/css3_2dtransforms.asp -->
+        <!-- 참조 https://www.w3schools.com/css/css_display_visibility.asp -->
+
+        <div id="mydiv">
+            The display property specifies if/how an element is displayed.
+            Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+
+        <textarea rows="5" cols="30">
+            The display property specifies if/how an element is displayed.
+            Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.  
+        </textarea>
+        <br><br>
+
+        <iframe width="200" height="150" src="14_layout.html"></iframe>
+        <br>
+
+        <h3>display 세부 속성</h3>
+        <!-- display: none; -->
+        <div style="display: none;">무궁화</div>
+        <hr>
+
+        <!-- block 요소 -->
+        <div style="background-color: red; width: 300px; height: 300px;">오필승</div>
+        <div style="background-color: crimson;">코리아</div>
+        <p style="background-color: blue;">대한민국</p>
+        <header style="background-color: pink;">무궁화</header>
+        <section style="background-color: bisque;">아이티윌</section>
+        <hr>
+
+        <!-- inline 요소 -->
+        <span style="background-color: darkkhaki; width: 300px; height: 300px;">개나리</span>
+        <span style="background-color: darkslateblue;">진달래</span>
+        <hr>
+
+        <!-- inline-block 요소 : 줄바꿈이 되지 않지만 크기 지정이 가능하다. inline과 block의 중간형태 -->
+        <!-- 참조 https://www.w3schools.com/cssref/pr_class_display.asp -->
+        <h1>The display Property</h1>
+
+        <h2>display: none:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: inline:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: block:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: inline-block:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+    </body>
+</html>

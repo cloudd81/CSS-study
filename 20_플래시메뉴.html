@@ -1,0 +1,104 @@
+<!DOCTYPE html>  
+<html lang="ko">
+    <head>
+        <title>20_플래시메뉴.html</title>
+        <style>
+            .hide{
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+                font-size: 0;
+                line-height: 0;
+            }
+
+            #nav{
+                width: 200px;
+                margin: 0 auto;
+                background-color: whitesmoke;
+            }
+
+            #nav>ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            /* 1) 링크되는 문자열 스타일 */
+            #nav>ul>li>a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                display: block;
+                width: 200px;
+                height: 64px;
+                text-indent: 30px;
+
+            /* 4) 이미지 추가 */
+                background-image: url(../images/icons.png);
+                background-repeat: no-repeat;
+                background-position: right 0;
+            }
+
+            /* 2) 링크 문자열에 마우스 오버되면 각 배경색 바꾸기 */
+            #nav>ul>li:nth-child(1)>a:hover{
+                /* background-color: hotpink; 색상이름
+                background-color: #33ffff; 16진수
+                background-color: rgb(0, 25, 0); rgb 함수 */
+                background-color: #F5E8C7;
+            }
+
+            #nav>ul>li:nth-child(2)>a:hover{
+                background-color: #ECCCB2;
+            }
+            
+            #nav>ul>li:nth-child(3)>a:hover{
+                background-color: #DEB6AB;
+            }
+            
+            #nav>ul>li:nth-child(4)>a:hover{
+                background-color: #AC7088;
+            }
+
+            /* 3) 링크 문자열에 마우스 오버되면 다양한 스타일 적용시키기 */
+            #nav>ul>li>a:hover{
+                width: 240px;
+                color: whitesmoke;
+                font-size: 16px;
+                text-shadow: 2px 2px 2px black;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 0px 30px 30px 0px;   /* 모서리 지정해서 둥글게 하기 */
+                opacity: 0.85;                       /* 투명도 */
+                transition: width .4s linear;         /* 가로 방향으로 0.4초동안 부드럽게 */
+            }
+
+            /* 5) 각각 다른 이미지를 보여주기 위해 각 이미지의 위쪽 여백을 조절해서 지정 */
+            #nav>ul>li:nth-child(2)>a{
+                background-position: right -65px;
+            }
+
+            #nav>ul>li:nth-child(3)>a{
+                background-position: right -465px;
+            }
+
+            #nav>ul>li:nth-child(4)>a{
+                background-position: right -528px;
+            }
+
+        </style>
+    </head>
+    <body>        
+        <h1 class="hide">플래시메뉴</h1>
+
+        <div id="nav">
+            <h2 class="주요메뉴"></h2>
+            <ul>
+                <li><a href="#">flickr</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">newsvine</a></li>
+                <li><a href="#">last.fm</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*문자 인코딩 UTF-8*/
+/*반드시 첫줄에 와야 한다*/
+
+/*mystyle.css*/
+/* 참조 : https://www.w3schools.com/cssref/css_selectors.asp */
+
+* {
+    font-family: 궁서체;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}/*모든 요소들*/
+
+body {
+    --background-color: yellow;
+    margin: 0; /*바깥쪽 여백, 위부터 시계방향으로 각각 주고 싶은 여백의 양을 적으면 된다.*/
+    padding: 0; /*안쪽 여백*/
+}
+
+.line{border: 1px dotted gray;}
+
+#mylayer{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
